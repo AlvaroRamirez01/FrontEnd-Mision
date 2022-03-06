@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pedido</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1> <img src="img/LogoSeñorX.png" alt="logo de la pasteleria del señor X" width="50px" height="50px">
+            Pasteleria del señor X</h1>
+        <nav>
+            
+                <a href="pedido.html"> 
+                    <button class="button button5">Hacer pedido</button> 
+                </a>
+                <a href="ubicacion.html">
+                    <button class="button button5">Ubicación de la sucursal</button>
+                </a>
+                <a href="index.html"> 
+                    <button class="button button5">Menu principal</button> 
+                </a>
+        </nav>
+    </header>
+    <h1 style="background-color: white;">Pedidos de pasteles</h1>
+    <div>
+        <h2>Formulario para pedido de pasteles</h2>
+        <form>
+            <label for="Nombre">Ingrese su nombre</label><br>
+            <input type="text" id="Nombre" placeholder="Nombre"><br>
+            
+            <label for="telefono">Ingrese su teléfono</label><br>
+            <input type="tel" id="telefono" name="telefono" maxlength="10" placeholder="5512345678" ><br><br>
+            
+            <label for="correo">Ingrese su correo electrónico</label><br>
+            <input type="email" id="correo" name="correo" placeholder="example@mail.com"><br><br>
+            
+            <label for="nombre">Da la descripcio del pastel </label><br>
+            <input type="text" id="descripcion" name="descripcion"><br>
+
+            <h3>Escoge el sabor o sabores de tu pastel </h3>
+            <input type="checkbox" id="Chocolate" name="sabor" value="Chocolate">
+            <label for="Chocolate">Chocolate</label><br>
+            <input type="checkbox" id="Durazno" name="sabor" value="Durazno">
+            <label for="Durazno ">Durazno</label><br>
+            <input type="checkbox" id="Fresa" name="sabor" value="Fresa">
+            <label for="Fresa">Fresa</label><br>
+            <input type="checkbox" id="Tresleches" name="sabor" value="Tresleches">
+            <label for="Tresleches">Tres leches</label><br>
+            <input type="checkbox" id="Cafe" name="sabor" value="Cafe">
+            <label for="Cafe">Café</label><br>
+            
+            
+            <h3>Escoge el adorno o los adornos de tu pastel</h3> 
+            <input type="checkbox" id="Flores" name="Flores" value="Flores">
+            <label for="Flores">Flores de Merengue</label><br>
+            <input type="checkbox" id="Merengue" name="Merengue" value="Merengue">
+            <label for="Merengue ">Merengue</label><br>
+            
+            <input type="checkbox" id="Fondat" name="Fondat" value="Fondat">
+            <label for="Fondat">Fondat</label><br>
+            <input type="checkbox" id="Fruta" name="Fruta" value="Fruta">
+            <label for="Fruta variada"></label>Fruta<br>
+
+            <input class="button button5" type="submit" value="enviar">
+            <input class="button button5" type="reset" value="restablecer">
+
+    
+        </form>
+    </div>
+    <br>
+    <a href="index.html">
+        <button class="button button5">regresar</button>
+    </a>
+</body>
+</html>
