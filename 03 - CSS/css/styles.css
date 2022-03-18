@@ -1,0 +1,433 @@
+*{margin:0; padding:0;}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+header{
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    background-color: linear-gradient(90deg, rgba(255,255,255,0) 50%, rgb(222, 240, 255) 55%);
+    padding: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.select{
+    width:150px;
+    font-size: 1.8rem;
+    background-color: white;
+
+}
+
+.header{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 50%, rgb(222, 240, 255) 55%);
+    padding: 1.5rem;
+}
+
+.cabecera{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cab-izquierda{
+    font-weight: var(--grande);
+    font-size: 3rem;
+    color: var(--azul);
+    float: left;
+}
+
+
+.cab-derecha{
+    align-items: right;
+    display: flex;
+    gap: 4rem;
+    float: right;
+}
+
+
+.botton-submit a{
+    background-color: var(--azul);
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: .5rem;
+    color: var(--blanco);
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.22);
+    -webkit-box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.22);
+    -moz-box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.22);
+}
+
+ .info-principal{
+    position: relative;
+    display: grid;    
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    cursor: all-scroll;
+    transition-duration: 5s;
+}
+
+.titulo{
+    transition-duration: 5s;
+    background-blend-mode: soft-light;
+    padding-left: 8rem;
+    height: 70rem;
+}
+
+.titulo h1{
+    color: var(--azulfuerte);
+    font-weight: var(--grande);
+    font-family: var(--fuente);
+    text-transform: initial;
+    font-size: 5rem;
+    width: 90%;
+    text-align: left;
+}
+
+.titulo p{
+    color: var(--gris);
+    font-size: 2rem;
+}
+
+.etiquetas{
+    transition-duration: 5s;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.etiqueta{
+    margin-top: 8rem;
+}
+
+.foto-principal{
+    height: 90rem;
+    background-size: cover;
+    background-position: center center;
+   
+}
+
+.banner{
+    transition-duration: 5s;
+    position: absolute;
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0px 10px 40px rgba(3, 19, 23, 0.25);
+    border-radius: 1rem;
+    margin: -55rem 12rem;
+    background-color: var(--blanco);
+}
+
+.datosVacunaTitulo{
+    font-size: 2rem;
+    font-weight: var(--grande);
+    color: var(--azul);
+    text-align: left;
+}
+
+.datosVacuna p{
+    padding-left: 2rem;
+}
+
+.datosVacuna i{
+    color: var(--azul);
+}
+
+.marcas{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    margin: -30rem 5rem;
+    cursor: all-scroll;
+    transition-duration: 5s;
+}
+
+.infoVacYCovid{
+    display: grid;   
+    gap: 5rem; 
+    margin: 35rem 5rem;
+}
+
+.infoVacYCovid h2{
+    color: var(--azulfuerte);
+    font-weight: var(--grande);
+    font-family: var(--fuente);
+    text-transform: initial;
+    font-size: 4rem;
+    width: 90%;
+    text-align: left;
+}
+
+.infoVacYCovid p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--gris);
+    font-size: 2rem;
+    width: 40%;
+}
+
+.barra{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.cajas{ 
+    border-radius: .5rem;
+    padding: 3rem;
+    outline-style: rgb(199, 199, 199); }
+
+
+.cajas h3{
+    color: var(--azulfuerte);
+    font-weight: var(--grande);
+    font-family: var(--fuente);
+    text-transform: initial;
+    font-size: 3.5rem;
+    width: 100%;
+    text-align: left;
+    
+}
+
+.cajas p{
+    color: var(--gris);
+    font-size: 2rem;
+    width: 100%;
+}
+
+.preparacion{
+    margin-top: -20rem;
+}
+
+.espacioImg{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.paciente{
+    margin-top: 5rem;
+    padding-left: 8rem;
+    height: 60rem;
+    background-size: cover;
+    background-position: center center;
+} 
+
+.antesVac h2{
+    color: var(--azulfuerte);
+    font-weight: var(--grande);
+    font-family: var(--fuente);
+    text-transform: initial;
+    font-size: 3.5rem;
+    width: 100%;
+    text-align: left;
+}
+
+.antesVac p{
+    color: var(--gris);
+    font-size: 2rem;
+    width: 100%;
+}
+
+.antesVac-derecho{
+    margin-top: 2rem;
+    padding: 4rem;
+}
+
+.preparacion-lista {
+    color: var(--azulfuerte);
+    font-weight: var(--grande);
+    font-family: var(--fuente);
+    
+    font-size: 2.5rem;
+    text-align: left;
+    background-color: var(--blanco);
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 2px 5px rgb(216, 216, 216);
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preparacion-lista p{
+    font-size: 2rem;
+    font-weight: var(--mediana);
+    font-family: var(--regular);
+}
+
+.emergencias{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-top: 10rem;
+}
+
+.bloques h2{
+    color: var(--azulfuerte);
+    font-weight: var(--grande);
+    font-family: var(--fuente);
+    text-transform: initial;
+    font-size: 3.5rem;
+    width: 100%;
+    text-align: left;
+}
+
+.bloques p{
+    color: var(--gris);
+    font-size: 2rem;
+    width: 90%;
+}
+
+.imagenDoctor{
+    margin-top: 10rem;
+    padding-left: 10rem;
+    height: 60rem;
+    background-position: center center;
+} 
+
+.botonContactar{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 2rem;
+    padding: 2rem 2rem 2rem 0;
+}
+
+.contacto{
+    
+    margin-top: 5rem;
+    padding: 4rem;
+    gap: 2rem;
+    
+    box-shadow: 0px 2px 5px rgb(216, 216, 216);
+}
+
+.cuadrito{
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cuadrito i{
+    color: var(--azul);
+    font-size: 2rem;
+    background-color: var(--aclaro);
+    padding: 1.5rem;
+    border-radius: .5rem;
+    margin-right: 1rem;
+}
+
+.cuadrito h3{
+    color: var(--azulfuerte);
+    font-weight: var(--grande);
+    font-family: var(--fuente);
+    text-transform: initial;
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.cuadrito p{
+    color: var(--gris);
+    font-size: 1.6rem;
+    margin-top: 0;
+}
+
+.botonContacto{
+    background-color: var(--aclaro);
+    font-weight: var(--regular);
+    font-family: var(--fuente-principal);
+    text-align: center;
+    padding: 1rem;
+    border-radius: .5rem;
+    display: block;
+    margin: auto;
+}
+
+.foot{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+}
+
+.footer-logo p{
+    color: var(--gris);
+    font-size: 1.8rem;
+    font-weight: var(--mediana);
+    font-family: var(--fuente);
+    text-align: left;
+}
+
+.footer-logo h1{
+    font-size: 2rem;
+    text-align: left;
+    color: var(--azulfuerte);
+}
+
+.footer{    
+    background-color: #e3eaff;
+    padding: 4rem;
+}
+
+.footerDerecho{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    display: grid;
+}
+
+.footerColumna h2{
+    color: var(--azulfuerte);
+    font-weight: var(--grande);
+    font-family: var(--fuente);
+    font-size: 2rem;
+    text-align: left;
+    
+}
+
+.lista li{
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    color: var(--gris);
+    font-weight: var(--mediana);
+    font-family: var(--fuente);
+}
+
+.derechos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--gris);
+    font-size: 1.6rem;
+    margin-top: 5rem;
+    margin-bottom: 0;
+    gap: 2rem;
+}
+
+:root {
+    --mediana : 400;
+    --grande: 600;
+    --azul: #2448da;
+    --azulfuerte: #1f3e72;
+    --aclaro: #addeff;
+    --gris: #727883;
+    --blanco: #ffffff;
+}
