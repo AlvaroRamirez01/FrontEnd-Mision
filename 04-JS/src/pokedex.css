@@ -1,0 +1,246 @@
+body {
+	background: linear-gradient(-45deg, #f83a00, #e73c7e, #23a6d5, #4cd523);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+	height: 100vh;
+}
+
+.tituloPokedex {
+    width: 400px;
+    height: 60px;
+    margin: 0 auto;
+    border: 10px solid;
+    border-image: linear-gradient(to right, #f83a00, #e73c7e, #23a6d5, #4cd523) 1;
+    --angle: 0deg;
+    border-image: linear-gradient(var(--angle), #f83a00, #e73c7e, #23a6d5, #4cd523) 1;
+    animation: 7s rotate linear infinite;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: inherit;
+    text-align: center;
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes rotate {
+    to {
+      --angle: 360deg;
+    }
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.container{
+    position: relative;
+    margin: 0 auto;
+}
+
+.carcasaPokedex {
+    background: #d80202;
+    width: 350px; 
+    height: 500px; 
+    border: 5px solid rgb(0, 0, 0);
+    position: relative;
+    margin-top: 40px;
+    margin-left: 300px;
+    overflow: hidden;
+    float:  left;
+}
+
+.circulo1 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 3px solid rgb(0, 0, 0);
+    background: #00eeff;
+    top : 10px;
+    left: 10px;;
+}
+.circulo2 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 3px solid rgb(0, 0, 0);
+    background: #ff0000;
+    top : 30px;
+    left: 60px;;
+}
+.circulo3 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 3px solid rgb(0, 0, 0);
+    background: #eeff00;
+    top : 30px;
+    left: 85px;;
+}
+.circulo4 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 3px solid rgb(0, 0, 0);
+    background: #00ff00;
+    top : 30px;
+    left: 110px;;
+}
+.pantallaPokedex {
+    position: absolute;
+    background: #ffffff;
+    border: 5px solid rgb(0, 0, 0);
+    left: 25px;
+    top: 70px;
+    width: 290px;
+    height: 250px;
+    z-index: 10;
+}
+
+.nombrePokemon{
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: inherit;
+    margin-top: 15px;
+    margin-left: 85px;
+    display: block;
+    text-transform: capitalize;
+}
+
+.pokeball{
+    position: absolute;
+    left: 60px;
+    top: 60px;
+    width: 180px;
+    height: 180px;
+}
+
+.barraBusqueda{
+    position: absolute;
+    left: 70px;
+    top: 350px;
+    width: 200px;
+    height: 35px;
+    background: #ffffff;
+    border: 3px solid rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: inherit;
+    text-align: center;
+}
+.botonBuscar{
+    position: absolute;
+    left: 70px;
+    top: 410px;
+    width: 210px;
+    height: 50px;
+    background: #9e9797;
+    border: 3px solid rgb(0, 0, 0);
+    font-size: 25px;
+    font-weight: bold;
+    font-family: inherit;
+    text-align: center;
+}
+
+
+.btn-grad {
+    position: absolute;
+    background-image: linear-gradient(to right, #00c6ff 0%, #0072ff  51%, #00c6ff  100%);
+    left: 70px;
+    top: 410px;
+    width: 210px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(0, 0, 0);            
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    border-radius: 10px;
+    display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+/* segundo lado de la pokedex */
+
+.carcasaPokedex2{
+    background: #d80202;
+    width: 350px; 
+    height: 500px; 
+    border: 5px solid rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-right: 300px;
+    float: right;
+}
+.cuadroEstadisticas{
+    position: relative;
+    background-color: #ffffff;
+    width: 280px;
+    height: 430px;
+    border: 5px solid rgb(0, 0, 0);
+    margin-top: 30px;
+    margin-left: 30px;
+    overflow: hidden;
+}
+
+.datosPokemon p{
+    position: relative;
+    font-size: 25px;
+    font-weight: bold;
+}
+.poke-id{
+    position: relative;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 110px;
+}
+
+.poke-stats div {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.poke-types div {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px dashed black;
+}

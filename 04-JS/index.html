@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="./src/pokedex.css">
+    
+</head>
+<body>
+    <h1 class="tituloPokedex">Pokedex LaunchX</h1>
+    <div class="container">
+        <!-- Parte izquierda de la pokedex -->
+        <div class="carcasaPokedex">
+            <div class="circulo1"></div>
+            <div class="circulo2"></div>
+            <div class="circulo3"></div>
+            <div class="circulo4"></div>
+            <div class="pantallaPokedex">
+                <div data-poke-name class="nombrePokemon">Pokedex</div>
+                <img src="./src/img/pokeball.png" alt="Pokemon" id="pokeImg" class="pokeball">
+            </div>
+            <input class="barraBusqueda" type="text" placeholder="Ingrese nombre de pokemon" id="pokeName" name="pokeName">
+            <button class="btn-grad" onclick="fetchPokemon()">Cambiar Imágen</button>
+        </div>
+        <!-- Parte derecha de la pokedex -->
+        <div class="carcasaPokedex2">
+            <div class="cuadroEstadisticas">
+                <div data-poke-id class="poke-id"></div>
+                <div data-poke-types class="poke-types"></div>
+                <div data-poke-stats class="poke-stats"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <script src="./src/index.js"></script>
+</footer>
+</html>
